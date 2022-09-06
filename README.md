@@ -1,74 +1,64 @@
-# Level-4-Capstone-Project-I-PHP-and-SQL-Server
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-SPECIFICATIONS
-You are to create a new dynamic website for a company called Cool Tech.
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Cool Tech specialises in bringing digestible information about all things technology for popular consumption. Their current website has a very simple blogging theme, but they have grown so popular that they are in need of a new website with more features and the functionality to serve their growing needs.
+## About Laravel
 
-Cool Tech has four main article categories:
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-● Tech news
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-● Software reviews
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-● Hardware reviews
+## Learning Laravel
 
-● Opinion pieces
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-However, they are currently in the process of hiring more writers and expect this list to grow. Their current website has no way of distinguishing between categories, and they have requested that this be a feature of the new site.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Furthermore, articles are to be taggable with relevant terms, like “AI”, “Google”, “High-Performance Computing”, or “Singularity”. The purpose of tagging articles is improved SEO (Search Engine Optimisation) and allowing users to find articles easily on topics they are interested in.
+## Laravel Sponsors
 
-The new website should have the following pages (more details are in the compulsory tasks below):
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-● Home page
+### Premium Partners
 
-● Article view page
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-● Category view page, where only articles of a certain category are listed.
+## Contributing
 
-● Tag view page, where only articles of a certain tag are listed.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-● About Us page
+## Code of Conduct
 
-● Legal page, including Terms of Use, and Privacy Policy
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-Task 1
-● Design an appropriate database. It should store articles, their categories and their tags. Articles must be indexed by creation date, category, and tags so that they can quickly be listed by these features.
+## Security Vulnerabilities
 
-○ Note that an article has exactly 1 category, but can have any number (including 0) of tags.
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-○ After designing it, populate the database with sample data (articles, categories, and tags). At least 5 of each. This will be important for development.
+## License
 
-○ Create and submit a simple ERD outlining your DB design.
-
-● Create a Laravel project and link it up with the database.
-
-● Create the home page. It should feature the latest 5 articles. Display the appropriate titles, and the first paragraph of each article. Be sure that where you display an article title, that title is a link to its appropriate article page.
-
-Note: You do not need to write the actual articles. You can just use placeholder text.
-
-● Create the article view page. Its URL should have the form /article/{id} and should display the appropriate article’s title, content, creation date, category, and tags.
-
-● Create the category view page. Its URL should have the form /category/{slug} and should list all articles of a certain category.
-
-○ The slug is a URL friendly version of the category name. E.g. the “Tech News” category’s slug could be tech-news. It’s like a human-readable version of an id.
-
-○ If the requested slug does not exist, handle the issue gracefully.
-
-● Create the tag view page. It should behave the same as the category view page, but sort by tag, not category.
-
-○ Everywhere a tag is displayed (i.e. the article view page), it should be a link to the appropriate tag view page.
-
-● Create the legal page. It must contain generic website Terms of Use and Privacy Policy content.
-
-Here and here are some examples. You need not create fully-fledged legalese documents. A few simple paragraphs should do the trick.
-
-Task 2
-Extend the website to have the following functionality.
-
-● Create a search page. It should have 3 search bars — one for article ID, category, and tag, respectively. Clicking on the appropriate search button should redirect the user to the correct article, category, or tag page.
-
-● Create a cookie notice that is displayed on every page of the website. Hint: read about reusable components in Laravel.
-
-● Create a footer that is displayed on all web pages. It should contain links to the search page and legal page. It should also display a copyright notice with the current year.
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
